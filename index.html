@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BridgeAble</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="Assets/icon.png"/>
+</head>
+<body>
+  <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="21ed02a6-91a8-464b-8b36-729d6b5645e0";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+  <header>
+    <div class="container">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <img src="Assets/Logo Header.png" alt="EduMirror logo" style="height: 50px;">
+      </div>
+      <nav>
+        <a href="#teachers">المدرسين</a>
+        <a href="#plans">الباقات</a>
+        <a href="#donations">التبرعات</a>
+        <a href="#about">من نحن</a>
+        <a href="#contact">تواصل معنا</a>
+      </nav>
+      <button class="login-button">تسجيل الدخول</button>
+    </div>
+  </header>
+
+  <div class="ad-section">📢 إعلان: انضم الآن واحصل على شهر مجاني في باقة المعلم الذكي!</div>
+  <div id="top-banner-ad" style="width:100%; height:90px; background:#e1e1e1; text-align:center;">
+    <p>Ad space</p>
+  </div>
+  <div class="iframe-container" id="iframeBox2">
+    <button class="close-btn" onclick="document.getElementById('iframeBox2').style.display='none';document.getElementById('video-amal').src='';">✖</button>
+    <iframe id="video-amal" src="https://www.youtube.com/embed/RvQgOerz1Eg" title="قصة أمل مابتنتهيش (  مبادرة أتعلم لغة اشارة وافهمنا)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  <div class="iframe-container" id="iframeBox1">
+    <button class="close-btn" onclick="document.getElementById('iframeBox1').style.display='none';document.getElementById('video-mohammed').src='';">✖</button>
+    <iframe id="video-mohammed" src="https://www.youtube.com/embed/Q5ssSg7kljc" title="كورس لغه الأشاره | المفجأه الأولي" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+
+  <section id="teachers">
+    <h2 class="section-title">المدرسين المتوفرين</h2>
+    <div class="grid">
+      <div class="teacher">
+        <img src="https://yt3.googleusercontent.com/R2hPUp2uIORF1-9HgiGF45SSXYtnoi0Swe_EYL1cErMD5aSx_Tq8xM6B-Zyc8yU5l-fRjeH9pyE=s160-c-k-c0x00ffffff-no-rj" alt="Teacher">
+        <h3>محمد نبيل</h3>
+        <p>مدرّب معتمد من جامعة عين شمس. لديه سلسلة كورس منظمة للمبتدئين فيها 23 فيديو تغطي: الحروف، الأرقام، الملابس، المأكولات، المشاعر، المهن، الأماكن، الصحة، التعليم، والدين، وغيرها</p>
+        <button>احجز الآن</button>
+        <button onclick="document.getElementById('iframeBox1').style.display='block';document.getElementById('video-mohammed').src='https://www.youtube.com/embed/Q5ssSg7kljc';">شاهد التعريف</button>
+      </div>
+      <div class="teacher">
+        <img src="https://yt3.googleusercontent.com/ytc/AIdro_nZ-64dIouNiRw85n6XqI4dZCIw0LGYL2dlkbUAMRAXwUk=s176-c-k-c0x00ffffff-no-rj-mo" alt="Teacher">
+        <h3>أمل البارودي</h3>
+        <p>أخصائية لغة إشارة ومعلمة نفسية أولى في مدرسة "الأمل" للصم. و تعمل مترجمة معتمدة للغة الإشارة</p>
+        <button>احجز الآن</button>
+        <button onclick="document.getElementById('iframeBox2').style.display='block';document.getElementById('video-amal').src='https://www.youtube.com/embed/RvQgOerz1Eg';">شاهد التعريف</button>
+      </div>
+      <div class="teacher">
+        <img src="Assets/arabic.png" alt="Teacher">
+        <h3>اللغة العربية</h3>
+        <p>المدرس: أ. هبة جمال<br><br>الوصف: متخصصة في اللغة العربية للصم</p>
+        <button>احجز الآن</button>
+      </div>
+      <div class="teacher">
+        <img src="Assets/math.png" alt="Teacher">
+        <h3>الرياضيات</h3>
+        <p>المدرس: أ. شيماء محمد<br><br>الوصف: خبيرة في تعليم الرياضيات للصم بلغة الإشارة</p>
+        <button>احجز الآن</button>
+      </div>
+      <div class="teacher">
+        <img src="Assets/science.png" alt="Teacher">
+        <h3>العلوم</h3>
+        <p>المدرس: أ. عبدالرحمن علي<br><br>الوصف: يشرح المواد العلمية بلغة الإشارة</p>
+        <button>احجز الآن</button>
+      </div>
+    </div>
+  </section>
+  <section id="events">
+    <h2 class="section-title">فعاليات مميزة</h2>
+    <div class="grid">
+      <div class="teacher">
+        <img src="Assets/cropped_circle_image.png" alt="Teacher">
+        <h3>المشروع الوطني للقراءة</h3>
+        <p>التأهيل للمسابقة من خلال اجراء تدريبات للطالب من خلال تمرينهم على تلخيص الكتب و الإجابة على اسئلة المحاضريين</p>
+        <button>أشترك الآن</button>
+      </div>
+      <div class="teacher">
+        <img src="Assets/cropped_circle_image (1).png" alt="Teacher">
+        <h3>مسار الربوتات</h3>
+        <p>تعليم الطلاب عن اساسيات برمجة الربوتات كما ايضا نقدم ورش عمل فعلية حتى يتم تطبيق ما تعلموه كما انهم ايضا يحصلون على شهادة تخرج من مسار الربوتات</p>
+        <button>اشترك الآن</button>
+      </div>
+    </div>
+  </section>
+  <div style="display: flex; justify-content: center;">
+
+    <div id="sidebar-ad" style="width:300px; height:250px; background:#e1e1e1; margin:20px auto; text-align:center;">
+      <p>Ad space</p>
+    </div>
+    <div id="sidebar-ad" style="width:300px; height:250px; background:#e1e1e1; margin:20px auto; text-align:center;">
+      <p>Ad space</p>
+    </div>
+  </div>
+
+  <section id="plans">
+    <h2 class="section-title">باقات الاشتراك</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>الخطة المجانية</h3>
+        <p><strong>0 ج / شهر</strong></p>
+        <p>وصول محدود للدروس، إعلانات بسيطة</p>
+        <button>ابدأ الآن</button>
+      </div>
+      <div class="card">
+        <h3>الخطة الشهرية</h3>
+        <p><strong>150 ج / شهر</strong></p>
+        <p>وصول غير محدود، دعم مباشر، بدون إعلانات</p>
+        <button>اشترك</button>
+      </div>
+      <div class="card">
+        <h3>الخطة السنوية</h3>
+        <p><strong>1700 ج / سنة</strong></p>
+        <p>كل مزايا الخطة الشهرية، حسم شهرين، هدايا تعليمية</p>
+        <button>اشترك</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="donations">
+    <h2 class="section-title">التبرعات</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>دعم الطلاب</h3>
+        <p>ساهم في تمويل اشتراكات الطلاب غير القادرين.</p>
+        <button>تبرع الآن</button>
+      </div>
+      <div class="card">
+        <h3>تطوير المنصة</h3>
+        <p>ساعدنا في إضافة ميزات جديدة وتحسين الأداء.</p>
+        <button>تبرع الآن</button>
+      </div>
+      <div class="card">
+        <h3>محتوى مجاني</h3>
+        <p>ساهم في نشر الدروس المجانية للجميع.</p>
+        <button>تبرع الآن</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">من نحن</h2>
+    <div class="about-text">
+      منصة <strong>BridgeAble</strong> تسعى لتمكين الطلاب من الوصول إلى تعليم عالي الجودة في أي مكان، من خلال ربطهم بمدرسين أكفاء وباقات مرنة تناسب احتياجاتهم. نحن نؤمن بأن التعليم حق للجميع،كما انه ايضا نمنحهم حق تجريب حصة مجانية للمدرس المختار , ونعمل باستمرار لتقديم أفضل تجربة تعليمية رقمية متاحة باللغة العربية.
+    </div>
+  </section>
+
+  <section id="flashcards">
+    <h2 class="section-title">بطاقات تعليم الإشارة</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="front">
+          <p class="word-text">تفاحة</p>
+          <img src="https://static.vecteezy.com/system/resources/previews/020/899/515/non_2x/red-apple-isolated-on-white-png.png" alt="تفاح" width="80">
+          <br>
+          <button class="flip-btn" onclick="flipCard(this)">اقلب البطاقة</button>
+        </div>
+
+        <div class="back">
+          <img src="Assets/j.jpg" alt="">
+          <img src="Assets/t.jpg" alt="">
+          <img src="Assets/h.jpg" alt="">
+          <img src="Assets/p.jpg" alt="">
+          <img src="Assets/j.jpg" alt="">
+          <br>
+          <button class="flip-btn" onclick="flipCard(this)">اقلب البطاقة</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="front">
+          <p class="word-text">إجاص</p>
+          <img src="https://png.pngtree.com/png-clipart/20250420/original/pngtree-fresh-green-pear-with-stem-and-leaf-isolated-on-transparent-background-png-image_20746474.png" alt="ماء" width="80">
+          <br>
+          <button class="flip-btn" onclick="flipCard(this)">اقلب البطاقة</button>
+        </div>
+
+        <div class="back">
+          <img src="Assets/h.jpg" alt="">
+          <img src="Assets/g.jpg" alt="">
+          <img src="Assets/h.jpg" alt="">
+          <img src="Assets/w.jpg" alt="">
+          <br>
+          <button class="flip-btn" onclick="flipCard(this)">اقلب البطاقة</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="front">
+          <p class="word-text">موز</p>
+          <img src="https://www.freeiconspng.com/thumbs/banana-png/banana-png-32.png" alt="موز" width="80">
+          <br>
+          <button class="flip-btn" onclick="flipCard(this)">اقلب البطاقة</button>
+        </div>
+
+        <div class="back">
+          <img src="Assets/l.jpg" alt="">
+          <img src="Assets/u.jpg" alt="">
+          <img src="Assets/z.jpg" alt="">
+          <br>
+          <button class="flip-btn" onclick="flipCard(this)">اقلب البطاقة</button>
+        </div>
+      </div>
+
+    </div>
+    <br>
+    
+  </section>
+
+  <div id="sidebar-ad" style="width:300px; height:250px; background:#e1e1e1; margin:20px auto; text-align:center;">
+    <p>Ad space</p>
+  </div>
+
+
+  <section id="contact">
+    <h2 class="section-title">تواصل معنا</h2>
+    <div class="contact-form">
+      <form>
+        <input type="text" placeholder="الاسم" required>
+        <input type="email" placeholder="البريد الإلكتروني" required>
+        <textarea rows="5" placeholder="رسالتك" required></textarea>
+        <button type="submit">إرسال</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 BridgeAble. جميع الحقوق محفوظة.
+  </footer>
+
+  <script>
+
+    function flipCard(btn) {
+      const card  = btn.closest('.card');
+      const front = card.querySelector('.front');
+      const back  = card.querySelector('.back');
+
+      if (front.style.display !== 'none') {
+        front.style.display = 'none';
+        back.style.display  = 'block';
+      } else {
+        back.style.display  = 'none';
+        front.style.display = 'block';
+      }
+    }
+  </script>
+
+
+</body>
+</html>
