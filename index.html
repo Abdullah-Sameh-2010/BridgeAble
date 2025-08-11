@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BridgeAble</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="Assets/icon.png"/>
+</head>
+<body>
+  <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="21ed02a6-91a8-464b-8b36-729d6b5645e0";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+  <header>
+    <div class="container">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <img src="Assets/Logo Header.png" alt="EduMirror logo" style="height: 50px;">
+      </div>
+      <nav>
+        <a href="#teachers">المدرسين</a>
+        <a href="#plans">الباقات</a>
+        <a href="#donations">التبرعات</a>
+        <a href="#about">من نحن</a>
+        <a href="#contact">تواصل معنا</a>
+      </nav>
+      <button class="translate-button" onclick="toggleLanguage()">EN</button>
+      <button class="login-button">تسجيل الدخول</button>
+    </div>
+  </header>
+
+  <div class="ad-section">📢 إعلان: انضم الآن واحصل على شهر مجاني في باقة المعلم الذكي!</div>
+  <div id="top-banner-ad" style="width:100%; height:90px; background:#e1e1e1; text-align:center;">
+    <p>Ad space</p>
+  </div>
+  <div class="iframe-container" id="iframeBox2">
+    <button class="close-btn" onclick="document.getElementById('iframeBox2').style.display='none';document.getElementById('video-amal').src='';">✖</button>
+    <iframe id="video-amal" src="https://www.youtube.com/embed/RvQgOerz1Eg" title="قصة أمل مابتنتهيش (  مبادرة أتعلم لغة اشارة وافهمنا)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  <div class="iframe-container" id="iframeBox1">
+    <button class="close-btn" onclick="document.getElementById('iframeBox1').style.display='none';document.getElementById('video-mohammed').src='';">✖</button>
+    <iframe id="video-mohammed" src="https://www.youtube.com/embed/Q5ssSg7kljc" title="كورس لغه الأشاره | المفجأه الأولي" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+
+  <section id="teachers">
+    <h2 class="section-title">المدرسين المتوفرين</h2>
+    <div class="grid">
+      <div class="teacher">
+        <img src="https://yt3.googleusercontent.com/R2hPUp2uIORF1-9HgiGF45SSXYtnoi0Swe_EYL1cErMD5aSx_Tq8xM6B-Zyc8yU5l-fRjeH9pyE=s160-c-k-c0x00ffffff-no-rj" alt="Teacher">
+        <h3 data-key="teacher1Name">محمد نبيل</h3>
+        <p data-key="teacher1Desc">مدرّب معتمد من جامعة عين شمس. لديه سلسلة كورس منظمة للمبتدئين فيها 23 فيديو تغطي: الحروف، الأرقام، الملابس، المأكولات، المشاعر، المهن، الأماكن، الصحة، التعليم، والدين، وغيرها</p>
+        <button data-key="bookNow">احجز الآن</button>
+        <button onclick="document.getElementById('iframeBox1').style.display='block';document.getElementById('video-mohammed').src='https://www.youtube.com/embed/Q5ssSg7kljc';" data-key="watchIntro">شاهد التعريف</button>
+      </div>
+      <div class="teacher">
+        <img src="https://yt3.googleusercontent.com/ytc/AIdro_nZ-64dIouNiRw85n6XqI4dZCIw0LGYL2dlkbUAMRAXwUk=s176-c-k-c0x00ffffff-no-rj-mo" alt="Teacher">
+        <h3 data-key="teacher2Name">أمل البارودي</h3>
+        <p data-key="teacher2Desc">أخصائية لغة إشارة ومعلمة نفسية أولى في مدرسة "الأمل" للصم. و تعمل مترجمة معتمدة للغة الإشارة</p>
+        <button data-key="bookNow">احجز الآن</button>
+        <button onclick="document.getElementById('iframeBox2').style.display='block';document.getElementById('video-amal').src='https://www.youtube.com/embed/RvQgOerz1Eg';" data-key="watchIntro">شاهد التعريف</button>
+      </div>
+      <div class="teacher">
+        <img src="Assets/arabic.png" alt="Teacher">
+        <h3 data-key="teacher3Name">اللغة العربية</h3>
+        <p data-key="teacher3Desc">المدرس: أ. هبة جمال<br><br>الوصف: متخصصة في اللغة العربية للصم</p>
+        <button data-key="bookNow">احجز الآن</button>
+      </div>
+      <div class="teacher">
+        <img src="Assets/math.png" alt="Teacher">
+        <h3 data-key="teacher4Name">الرياضيات</h3>
+        <p data-key="teacher4Desc">المدرس: أ. شيماء محمد<br><br>الوصف: خبيرة في تعليم الرياضيات للصم بلغة الإشارة</p>
+        <button data-key="bookNow">احجز الآن</button>
+      </div>
+      <div class="teacher">
+        <img src="Assets/science.png" alt="Teacher">
+        <h3 data-key="teacher5Name">العلوم</h3>
+        <p data-key="teacher5Desc">المدرس: أ. عبدالرحمن علي<br><br>الوصف: يشرح المواد العلمية بلغة الإشارة</p>
+        <button data-key="bookNow">احجز الآن</button>
+      </div>
+    </div>
+  </section>
+  <section id="events">
+    <h2 class="section-title">فعاليات مميزة</h2>
+    <div class="grid">
+      <div class="teacher">
+        <img src="Assets/cropped_circle_image.png" alt="Teacher">
+        <h3 data-key="event1Name">المشروع الوطني للقراءة</h3>
+        <p data-key="event1Desc">التأهيل للمسابقة من خلال اجراء تدريبات للطالب من خلال تمرينهم على تلخيص الكتب و الإجابة على اسئلة المحاضريين</p>
+        <button data-key="subscribeNow">أشترك الآن</button>
+      </div>
+      <div class="teacher">
+        <img src="Assets/cropped_circle_image (1).png" alt="Teacher">
+        <h3 data-key="event2Name">مسار الربوتات</h3>
+        <p data-key="event2Desc">تعليم الطلاب عن اساسيات برمجة الربوتات كما ايضا نقدم ورش عمل فعلية حتى يتم تطبيق ما تعلموه كما انهم ايضا يحصلون على شهادة تخرج من مسار الربوتات</p>
+        <button data-key="subscribeNow">اشترك الآن</button>
+      </div>
+    </div>
+  </section>
+  <div style="display: flex; justify-content: center;">
+
+    <div id="sidebar-ad" style="width:300px; height:250px; background:#e1e1e1; margin:20px auto; text-align:center;">
+      <p>Ad space</p>
+    </div>
+    <div id="sidebar-ad" style="width:300px; height:250px; background:#e1e1e1; margin:20px auto; text-align:center;">
+      <p>Ad space</p>
+    </div>
+  </div>
+
+  <section id="plans">
+    <h2 class="section-title">باقات الاشتراك</h2>
+    <div class="grid">
+      <div class="card">
+        <h3 data-key="plan1Name">الخطة المجانية</h3>
+        <p><strong data-key="plan1Price">0 ج / شهر</strong></p>
+        <p data-key="plan1Desc">وصول محدود للدروس، إعلانات بسيطة</p>
+        <button data-key="startNow">ابدأ الآن</button>
+      </div>
+      <div class="card">
+        <h3 data-key="plan2Name">الخطة الشهرية</h3>
+        <p><strong data-key="plan2Price">150 ج / شهر</strong></p>
+        <p data-key="plan2Desc">وصول غير محدود، دعم مباشر، بدون إعلانات</p>
+        <button data-key="subscribe">اشترك</button>
+      </div>
+      <div class="card">
+        <h3 data-key="plan3Name">الخطة السنوية</h3>
+        <p><strong data-key="plan3Price">1700 ج / سنة</strong></p>
+        <p data-key="plan3Desc">كل مزايا الخطة الشهرية، حسم شهرين، هدايا تعليمية</p>
+        <button data-key="subscribe">اشترك</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="donations">
+    <h2 class="section-title">التبرعات</h2>
+    <div class="grid">
+      <div class="card">
+        <h3 data-key="donation1Name">دعم الطلاب</h3>
+        <p data-key="donation1Desc">ساهم في تمويل اشتراكات الطلاب غير القادرين.</p>
+        <button data-key="donateNow">تبرع الآن</button>
+      </div>
+      <div class="card">
+        <h3 data-key="donation2Name">تطوير المنصة</h3>
+        <p data-key="donation2Desc">ساعدنا في إضافة ميزات جديدة وتحسين الأداء.</p>
+        <button data-key="donateNow">تبرع الآن</button>
+      </div>
+      <div class="card">
+        <h3 data-key="donation3Name">محتوى مجاني</h3>
+        <p data-key="donation3Desc">ساهم في نشر الدروس المجانية للجميع.</p>
+        <button data-key="donateNow">تبرع الآن</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">من نحن</h2>
+    <div class="about-text" data-key="aboutText">
+      منصة <strong>BridgeAble</strong> تسعى لتمكين الطلاب من الوصول إلى تعليم عالي الجودة في أي مكان، من خلال ربطهم بمدرسين أكفاء وباقات مرنة تناسب احتياجاتهم. نحن نؤمن بأن التعليم حق للجميع،كما انه ايضا نمنحهم حق تجريب حصة مجانية للمدرس المختار , ونعمل باستمرار لتقديم أفضل تجربة تعليمية رقمية متاحة باللغة العربية.
+    </div>
+  </section>
+
+  <section id="flashcards">
+    <h2 class="section-title">بطاقات تعليم الإشارة</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="front">
+          <p class="word-text" data-key="card1Word">تفاحة</p>
+          <img src="https://static.vecteezy.com/system/resources/previews/020/899/515/non_2x/red-apple-isolated-on-white-png.png" alt="تفاح" width="80">
+          <br>
+          <button class="flip-btn" onclick="flipCard(this)" data-key="flipCard">اقلب البطاقة</button>
+        </div>
+
+        <div class="back">
+          <img src="Assets/j.jpg" alt="">
+          <img src="Assets/t.jpg" alt="">
+          <img src="Assets/h.jpg" alt="">
+          <img src="Assets/p.jpg" alt="">
+          <img src="Assets/j.jpg" alt="">
+          <br>
+          <button class="flip-btn" onclick="flipCard(this)" data-key="flipCard">اقلب البطاقة</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="front">
+          <p class="word-text" data-key="card2Word">إجاص</p>
+          <img src="https://png.pngtree.com/png-clipart/20250420/original/pngtree-fresh-green-pear-with-stem-and-leaf-isolated-on-transparent-background-png-image_20746474.png" alt="ماء" width="80">
+          <br>
+          <button class="flip-btn" onclick="flipCard(this)" data-key="flipCard">اقلب البطاقة</button>
+        </div>
+
+        <div class="back">
+          <img src="Assets/h.jpg" alt="">
+          <img src="Assets/g.jpg" alt="">
+          <img src="Assets/h.jpg" alt="">
+          <img src="Assets/w.jpg" alt="">
+          <br>
+          <button class="flip-btn" onclick="flipCard(this)" data-key="flipCard">اقلب البطاقة</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="front">
+          <p class="word-text" data-key="card3Word">موز</p>
+          <img src="https://www.freeiconspng.com/thumbs/banana-png/banana-png-32.png" alt="موز" width="80">
+          <br>
+          <button class="flip-btn" onclick="flipCard(this)" data-key="flipCard">اقلب البطاقة</button>
+        </div>
+
+        <div class="back">
+          <img src="Assets/l.jpg" alt="">
+          <img src="Assets/u.jpg" alt="">
+          <img src="Assets/z.jpg" alt="">
+          <br>
+          <button class="flip-btn" onclick="flipCard(this)" data-key="flipCard">اقلب البطاقة</button>
+        </div>
+      </div>
+
+    </div>
+    <br>
+    
+  </section>
+
+  <div id="sidebar-ad" style="width:300px; height:250px; background:#e1e1e1; margin:20px auto; text-align:center;">
+    <p>Ad space</p>
+  </div>
+
+
+  <section id="contact">
+    <h2 class="section-title">تواصل معنا</h2>
+    <div class="contact-form">
+      <form>
+        <input type="text" placeholder="الاسم" required>
+        <input type="email" placeholder="البريد الإلكتروني" required>
+        <textarea rows="5" placeholder="رسالتك" required></textarea>
+        <button type="submit" data-key="send">إرسال</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 BridgeAble. جميع الحقوق محفوظة.
+  </footer>
+
+  <script>
+    let currentLanguage = 'ar';
+    
+    const translations = {
+      ar: {
+        title: 'BridgeAble',
+        nav: ['المدرسين', 'الباقات', 'التبرعات', 'من نحن', 'تواصل معنا'],
+        loginBtn: 'تسجيل الدخول',
+        adText: '📢 إعلان: انضم الآن واحصل على شهر مجاني في باقة المعلم الذكي!',
+        teachersTitle: 'المدرسين المتوفرين',
+        eventsTitle: 'فعاليات مميزة',
+        plansTitle: 'باقات الاشتراك',
+        donationsTitle: 'التبرعات',
+        aboutTitle: 'من نحن',
+        flashcardsTitle: 'بطاقات تعليم الإشارة',
+        contactTitle: 'تواصل معنا',
+        bookNow: 'احجز الآن',
+        watchIntro: 'شاهد التعريف',
+        subscribeNow: 'اشترك الآن',
+        startNow: 'ابدأ الآن',
+        subscribe: 'اشترك',
+        donateNow: 'تبرع الآن',
+        flipCard: 'اقلب البطاقة',
+        send: 'إرسال',
+        footerText: '© 2025 BridgeAble. جميع الحقوق محفوظة.',
+        // Teachers content
+        teacher1Name: 'محمد نبيل',
+        teacher1Desc: 'مدرّب معتمد من جامعة عين شمس. لديه سلسلة كورس منظمة للمبتدئين فيها 23 فيديو تغطي: الحروف، الأرقام، الملابس، المأكولات، المشاعر، المهن، الأماكن، الصحة، التعليم، والدين، وغيرها',
+        teacher2Name: 'أمل البارودي',
+        teacher2Desc: 'أخصائية لغة إشارة ومعلمة نفسية أولى في مدرسة "الأمل" للصم. و تعمل مترجمة معتمدة للغة الإشارة',
+        teacher3Name: 'اللغة العربية',
+        teacher3Desc: 'المدرس: أ. هبة جمال<br><br>الوصف: متخصصة في اللغة العربية للصم',
+        teacher4Name: 'الرياضيات',
+        teacher4Desc: 'المدرس: أ. شيماء محمد<br><br>الوصف: خبيرة في تعليم الرياضيات للصم بلغة الإشارة',
+        teacher5Name: 'العلوم',
+        teacher5Desc: 'المدرس: أ. عبدالرحمن علي<br><br>الوصف: يشرح المواد العلمية بلغة الإشارة',
+        // Events content
+        event1Name: 'المشروع الوطني للقراءة',
+        event1Desc: 'التأهيل للمسابقة من خلال اجراء تدريبات للطالب من خلال تمرينهم على تلخيص الكتب و الإجابة على اسئلة المحاضريين',
+        event2Name: 'مسار الربوتات',
+        event2Desc: 'تعليم الطلاب عن اساسيات برمجة الربوتات كما ايضا نقدم ورش عمل فعلية حتى يتم تطبيق ما تعلموه كما انهم ايضا يحصلون على شهادة تخرج من مسار الربوتات',
+        // Plans content
+        plan1Name: 'الخطة المجانية',
+        plan1Price: '0 ج / شهر',
+        plan1Desc: 'وصول محدود للدروس، إعلانات بسيطة',
+        plan2Name: 'الخطة الشهرية',
+        plan2Price: '150 ج / شهر',
+        plan2Desc: 'وصول غير محدود، دعم مباشر، بدون إعلانات',
+        plan3Name: 'الخطة السنوية',
+        plan3Price: '1700 ج / سنة',
+        plan3Desc: 'كل مزايا الخطة الشهرية، حسم شهرين، هدايا تعليمية',
+        // Donations content
+        donation1Name: 'دعم الطلاب',
+        donation1Desc: 'ساهم في تمويل اشتراكات الطلاب غير القادرين.',
+        donation2Name: 'تطوير المنصة',
+        donation2Desc: 'ساعدنا في إضافة ميزات جديدة وتحسين الأداء.',
+        donation3Name: 'محتوى مجاني',
+        donation3Desc: 'ساهم في نشر الدروس المجانية للجميع.',
+        // About content
+        aboutText: 'منصة <strong>BridgeAble</strong> تسعى لتمكين الطلاب من الوصول إلى تعليم عالي الجودة في أي مكان، من خلال ربطهم بمدرسين أكفاء وباقات مرنة تناسب احتياجاتهم. نحن نؤمن بأن التعليم حق للجميع،كما انه ايضا نمنحهم حق تجريب حصة مجانية للمدرس المختار , ونعمل باستمرار لتقديم أفضل تجربة تعليمية رقمية متاحة باللغة العربية.',
+        // Flashcards content
+        card1Word: 'تفاحة',
+        card2Word: 'إجاص',
+        card3Word: 'موز'
+      },
+      en: {
+        title: 'BridgeAble',
+        nav: ['Teachers', 'Plans', 'Donations', 'About Us', 'Contact Us'],
+        loginBtn: 'Login',
+        adText: '📢 Advertisement: Join now and get a free month in the Smart Teacher package!',
+        teachersTitle: 'Available Teachers',
+        eventsTitle: 'Special Events',
+        plansTitle: 'Subscription Plans',
+        donationsTitle: 'Donations',
+        aboutTitle: 'About Us',
+        flashcardsTitle: 'Sign Language Learning Cards',
+        contactTitle: 'Contact Us',
+        bookNow: 'Book Now',
+        watchIntro: 'Watch Introduction',
+        subscribeNow: 'Subscribe Now',
+        startNow: 'Start Now',
+        subscribe: 'Subscribe',
+        donateNow: 'Donate Now',
+        flipCard: 'Flip Card',
+        send: 'Send',
+        footerText: '© 2025 BridgeAble. All Rights Reserved.',
+        // Teachers content
+        teacher1Name: 'Mohammed Nabil',
+        teacher1Desc: 'Certified trainer from Ain Shams University. He has an organized course series for beginners with 23 videos covering: letters, numbers, clothing, food, emotions, professions, places, health, education, religion, and more',
+        teacher2Name: 'Amal El Baroudi',
+        teacher2Desc: 'Sign language specialist and first psychological teacher at "Al-Amal" school for the deaf. She works as a certified sign language interpreter',
+        teacher3Name: 'Arabic Language',
+        teacher3Desc: 'Teacher: Ms. Heba Gamal<br><br>Description: Specialized in Arabic language for the deaf',
+        teacher4Name: 'Mathematics',
+        teacher4Desc: 'Teacher: Ms. Shimaa Mohammed<br><br>Description: Expert in teaching mathematics to the deaf using sign language',
+        teacher5Name: 'Science',
+        teacher5Desc: 'Teacher: Mr. Abdulrahman Ali<br><br>Description: Explains scientific subjects in sign language',
+        // Events content
+        event1Name: 'National Reading Project',
+        event1Desc: 'Qualifying for the competition by conducting student training through training them to summarize books and answer lecturers\' questions',
+        event2Name: 'Robotics Track',
+        event2Desc: 'Teaching students about the basics of robot programming as well as providing actual workshops so that they can apply what they learned as they also get a graduation certificate from the robotics track',
+        // Plans content
+        plan1Name: 'Free Plan',
+        plan1Price: '0 EGP / month',
+        plan1Desc: 'Limited access to lessons, simple ads',
+        plan2Name: 'Monthly Plan',
+        plan2Price: '150 EGP / month',
+        plan2Desc: 'Unlimited access, direct support, no ads',
+        plan3Name: 'Annual Plan',
+        plan3Price: '1700 EGP / year',
+        plan3Desc: 'All monthly plan features, 2 months discount, educational gifts',
+        // Donations content
+        donation1Name: 'Student Support',
+        donation1Desc: 'Contribute to funding subscriptions for underprivileged students.',
+        donation2Name: 'Platform Development',
+        donation2Desc: 'Help us add new features and improve performance.',
+        donation3Name: 'Free Content',
+        donation3Desc: 'Contribute to spreading free lessons for everyone.',
+        // About content
+        aboutText: '<strong>BridgeAble</strong> platform seeks to empower students to access high-quality education anywhere, by connecting them with competent teachers and flexible packages that suit their needs. We believe that education is a right for everyone, and we also grant them the right to try a free session with the chosen teacher, and we continuously work to provide the best digital educational experience available in Arabic.',
+        // Flashcards content
+        card1Word: 'Apple',
+        card2Word: 'Pear',
+        card3Word: 'Banana'
+      }
+    };
+
+    function toggleLanguage() {
+      const newLang = currentLanguage === 'ar' ? 'en' : 'ar';
+      const html = document.documentElement;
+      const translateBtn = document.querySelector('.translate-button');
+      
+      // Update language attributes
+      html.setAttribute('lang', newLang);
+      html.setAttribute('dir', newLang === 'ar' ? 'rtl' : 'ltr');
+      
+      // Update translate button text
+      translateBtn.textContent = newLang === 'ar' ? 'EN' : 'عر';
+      
+      // Update navigation
+      const navLinks = document.querySelectorAll('nav a');
+      navLinks.forEach((link, index) => {
+        link.textContent = translations[newLang].nav[index];
+      });
+      
+      // Update all elements with data-key attributes
+      document.querySelectorAll('[data-key]').forEach(element => {
+        const key = element.getAttribute('data-key');
+        if (translations[newLang][key]) {
+          if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+            element.placeholder = translations[newLang][key];
+          } else {
+            element.innerHTML = translations[newLang][key];
+          }
+        }
+      });
+      
+      // Update specific elements
+      document.querySelector('.login-button').textContent = translations[newLang].loginBtn;
+      document.querySelector('.ad-section').textContent = translations[newLang].adText;
+      document.querySelector('#teachers .section-title').textContent = translations[newLang].teachersTitle;
+      document.querySelector('#events .section-title').textContent = translations[newLang].eventsTitle;
+      document.querySelector('#plans .section-title').textContent = translations[newLang].plansTitle;
+      document.querySelector('#donations .section-title').textContent = translations[newLang].donationsTitle;
+      document.querySelector('#about .section-title').textContent = translations[newLang].aboutTitle;
+      document.querySelector('#flashcards .section-title').textContent = translations[newLang].flashcardsTitle;
+      document.querySelector('#contact .section-title').textContent = translations[newLang].contactTitle;
+      
+      // Update footer
+      document.querySelector('footer').textContent = translations[newLang].footerText;
+      
+      // Update form placeholders
+      if (newLang === 'en') {
+        document.querySelector('input[type="text"]').placeholder = 'Name';
+        document.querySelector('input[type="email"]').placeholder = 'Email';
+        document.querySelector('textarea').placeholder = 'Your message';
+      } else {
+        document.querySelector('input[type="text"]').placeholder = 'الاسم';
+        document.querySelector('input[type="email"]').placeholder = 'البريد الإلكتروني';
+        document.querySelector('textarea').placeholder = 'رسالتك';
+      }
+      
+      currentLanguage = newLang;
+    }
+
+    function flipCard(btn) {
+      const card  = btn.closest('.card');
+      const front = card.querySelector('.front');
+      const back  = card.querySelector('.back');
+
+      if (front.style.display !== 'none') {
+        front.style.display = 'none';
+        back.style.display  = 'block';
+      } else {
+        back.style.display  = 'none';
+        front.style.display = 'block';
+      }
+    }
+  </script>
+
+
+</body>
+</html>
